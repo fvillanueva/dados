@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.io.dados.activities.PlayerActivity">
+
+    <TextView
+        android:id="@+id/textTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:text="Turno: 0"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textTurno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Score:0"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color.text"
+        android:id="@+id/buttonLanzar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonSave"
+        android:layout_alignLeft="@+id/buttonSave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonSave"
+        android:layout_alignStart="@+id/buttonSave"
+        android:layout_marginBottom="186dp"
+        android:text="Lanzar Dado 1"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color.text"
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textScore"
+        android:layout_alignLeft="@+id/textTurno"
+        android:layout_alignRight="@+id/textScore"
+        android:layout_alignStart="@+id/textTurno"
+        android:layout_alignTop="@+id/buttonLanzar"
+        android:layout_marginTop="71dp"
+        android:text="Guardar Datos"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:layout_above="@+id/buttonLanzar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dados"
+        android:layout_above="@+id/textResult"
+        android:layout_alignLeft="@+id/textResult"
+        android:layout_alignStart="@+id/textResult" />
+</RelativeLayout>

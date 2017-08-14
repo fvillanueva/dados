@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DadoPool</string>
+    <string name="button.play">Play</string>
+    <string name="button.verPuntaje">Puntajes Altos</string>
+    <string name="button.exit">Salir</string>
+    <string name="input.hint">Put Name Player</string>
+    <string name="app.code.init">122IFWWEDFFSSFFS%SFFSFSFSFFS</string>
+</resources>

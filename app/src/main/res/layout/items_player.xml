@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dados"
+                android:id="@+id/imagePlayer" />
+
+            <TextView
+                android:id="@+id/textPlayer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_toRightOf="@+id/imagePlayer"
+                android:text="Tim Garriet"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textPlayer_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textPlayer_name"
+                android:layout_alignStart="@+id/textPlayer_name"
+                android:layout_below="@+id/textPlayer_name"
+                android:text="Score: 20" />
+
+            <TextView
+                android:id="@+id/textPlayer_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPlayer_name"
+                android:layout_marginLeft="84dp"
+                android:layout_marginStart="84dp"
+                android:layout_toEndOf="@+id/textPlayer_score"
+                android:layout_toRightOf="@+id/textPlayer_score"
+                android:text="Fecha: 14/07/2017" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

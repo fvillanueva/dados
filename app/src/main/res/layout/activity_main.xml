@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.io.dados.MainActivity">
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/input.hint"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color.text"
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button.play"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_above="@+id/buttonScore"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color.text"
+        android:id="@+id/buttonScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonExit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:text="@string/button.verPuntaje"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color.text"
+        android:id="@+id/buttonExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/button.exit"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imagePresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        app:srcCompat="@drawable/dados" />
+</RelativeLayout>
