@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import app.io.dados.activities.InfoActivity;
 import app.io.dados.activities.PlayerActivity;
 import app.io.dados.activities.PlayerScoreActivity;
 import app.io.dados.utilities.Util;
